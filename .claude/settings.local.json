@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(powershell -Command \"Test-Path 'C:\\\\Program Files \\(x86\\)\\\\Microsoft Visual Studio\\\\2019\\\\Community\\\\VC\\\\Auxiliary\\\\Build\\\\vcvars64.bat'\")"
+      "Bash(powershell -Command \"Test-Path 'C:\\\\Program Files \\(x86\\)\\\\Microsoft Visual Studio\\\\2019\\\\Community\\\\VC\\\\Auxiliary\\\\Build\\\\vcvars64.bat'\")",
+      "Bash(powershell -Command \"Test-Path 'c:\\\\users\\\\shpaz\\\\projects'\")",
+      "Bash(powershell -Command \"Copy-Item -Path 'c:\\\\Users\\\\shpaz\\\\OneDrive\\\\Documents\\\\Projects\\\\show2' -Destination 'c:\\\\users\\\\shpaz\\\\projects\\\\show2' -Recurse -Force; Write-Output 'Done'\")"
     ]
   }
 }
