@@ -95,7 +95,7 @@ BOOL CALLBACK ListAppsProc(HWND hwnd, LPARAM lParam) {
                     : fullPath;
                 AppEntry entry;
                 entry.exeName = exeName;
-                entry.exeName += "*";
+                //entry.exeName += "*%$#";
                 entry.exePath = fullPath;
                 gAppList.push_back(entry);
             }
@@ -194,8 +194,8 @@ int main(int argc, char *argv[])
     }
 
     EnumWindows(EnumWindowsProc, 0);
-    char done[256];
-    std::cin >> done;
+    //char done[256];
+    //std::cin >> done;
     return TRUE;
 }
 
