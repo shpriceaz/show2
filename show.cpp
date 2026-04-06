@@ -194,8 +194,8 @@ int main(int argc, char *argv[])
     }
 
     EnumWindows(EnumWindowsProc, 0);
-    //char done[256];
-    //std::cin >> done;
+    char done[256];
+    std::cin >> done;
     return TRUE;
 }
 
